@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Rooms from "./Rooms";
+import Rooms from "../Pages/roomsPage/Rooms";
 import FrontScreen from "./FrontScreen";
-import Checkout from "./Checkout";
+import Checkout from "../Pages/checkoutPage/Checkout";
 import Menu from "./Menu";
 
 interface RoutesProps {

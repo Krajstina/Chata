@@ -5,12 +5,13 @@ interface NumberInputProps {
     label: any;
     name:any;
     register:any;
-
+    children?: React.ReactNode | React.ReactNode[];
 }
 
 const NumberInput = (props: NumberInputProps) => {
     return (
-            <div className="NumberInput">
+            <div className="NumberInput relative">
+
                 <label
                     htmlFor="guest"
                     className="mb-1 block text-base text-left font-medium  text-white"
@@ -20,11 +21,14 @@ const NumberInput = (props: NumberInputProps) => {
                 <input
                     type="number"
                     {...props.register(props.name, {required:true})}
+                    required={true}
                     name={props.name}
                     placeholder={props.placeholder}
-                    min="0"
-                    className="w-full rounded-md border  bg-white py-3 px-6 text-base text-left font-medium text-gray-400 outline-none focus:border-orange-4000 focus:shadow-md"
+                    className="w-full rounded-md border  bg-white py-3 px-2 text-base text-left lg:text-lg text-[13px] font-medium text-black placeholder:text-gray-300 outline-none focus:border-orange-4000 focus:shadow-md"
                 />
+                <div className={" relative flex flex-row items-end justify-end text-blue-900  font-roboto text-[10px] lg:text-[15px]"}>
+                    {props.children}
+                </div>
             </div>
     );
 };

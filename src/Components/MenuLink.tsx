@@ -12,9 +12,9 @@ interface MenuLinksProps {
 const MenuLink = (props: MenuLinksProps) => {
   return (
     <div>
-      <li className="MenuLinks my-16 list-none relative">
+      <li className="MenuLinks my-14 lg:my-16 list-none relative">
         <div className="flex flex-col h-full">
-          <span className="text-6xl font-roboto font-bold text-white text-left">
+          <span className="lg:text-6xl text-2xl font-roboto font-bold text-white text-left">
             <button type="button" onClick={props.onClick}>
               {props.menuItem.title}
             </button>

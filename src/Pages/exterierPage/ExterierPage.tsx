@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import GalleryImageHolder from "../../Components/GalleryImageHolder";
 import {GalleryImage} from "../../interfaces/GalleryImage";
-import {imagesList} from "../../reducers/helpers/helper";
+import {imagesList} from "../../helpers/utils";
 import {useDispatch} from "react-redux";
 import {openModal} from "../../reducers/actions/PopupActions";
 import ImageDetailCard from "./ImageDetailCard";
@@ -24,7 +24,7 @@ const ExterierPage = (props: ExterierPageProps) => {
 
   return (
     <section className="grow flex flex-col items-center  pt-8">
-      <div className="lg:pb-6">
+      <div className="lg:pb-6 pb-2">
         <span className="text-gray-800  text-3xl lg:text-4xl font-roboto uppercase font-semibold">
           Exteriér Chaty
         </span>

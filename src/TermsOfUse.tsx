@@ -4,7 +4,7 @@ interface TermsOfUseProps {}
 
 const TermsOfUse = (props: TermsOfUseProps) => {
   return (
-    <div className="TermsOfUse p-6">
+    <div className="TermsOfUse p-6 ">
       <div>
         <h1 className="pb-4 font-roboto font-bold">Pravidla chaty</h1>
         <p className="font-roboto font-normal">

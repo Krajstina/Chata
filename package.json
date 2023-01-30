@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.0.13",
+    "@hookform/resolvers": "^2.9.10",
     "@redux-devtools/extension": "^3.2.3",
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react-router-dom": "^5.3.3",
     "clsx": "^1.2.1",
+    "formik": "^2.2.9",
     "immutability-helper": "^3.1.1",
     "moment": "^2.29.4",
     "npm-watch": "^0.11.0",
@@ -18,16 +20,20 @@
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.40.0",
+    "react-hot-toast": "^2.4.0",
     "react-redux": "^8.0.5",
     "react-router": "^5.3.4",
     "react-router-dom": "^5.3.4",
     "react-routes": "^0.2.6",
     "react-scripts": "5.0.1",
+    "react-toast": "^1.0.3",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "swiper": "^8.4.5",
+    "toastify": "^2.0.1",
     "useref": "^1.4.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "export PORT=3010 && react-scripts start",

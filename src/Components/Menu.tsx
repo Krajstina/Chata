@@ -4,7 +4,7 @@ import {Bars3Icon} from "@heroicons/react/20/solid";
 import clsx from "clsx";
 import {XMarkIcon} from "@heroicons/react/24/outline";
 import MenuLink from "./MenuLink";
-import {menuItems, menuScrollHandler} from "../reducers/helpers/helper";
+import {menuItems, menuScrollHandler} from "../helpers/utils";
 
 interface MenuProps {}
 
@@ -62,7 +62,7 @@ const Menu = (props: MenuProps) => {
               className={"relative p-4 w-full h-full flex flex-col items-start"}
             >
               <MenuButton />
-              <nav className="flex flex-col items-end w-full ">
+              <nav className="flex flex-col items-end w-full mt-6 ">
                 {menuItems.map((menuItem, index) => {
                   return <MenuLink active={activeMenuItem} onClick={() => menuHandler(menuItem.id) } menuItem={menuItem} key={index} />;
                 })}

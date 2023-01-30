@@ -1,12 +1,12 @@
 import React from "react";
-import {eventy} from "../../reducers/helpers/helper";
+import { eventy } from "../../helpers/utils";
 
 interface EventsCardProps {}
 
 const EventsCard = (props: EventsCardProps) => {
   return (
     <div className="">
-      <div className="mx-auto max-w-xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-[1800px] lg:px-8">
+      <div className="mx-auto max-w-xl  py-6 lg:py-16 px-4 sm:py-24 sm:px-6 lg:max-w-[1800px] lg:px-8">
         <h2 className="text-xl font-medium text-gray-900">Nasa ponuka</h2>
         <p className="mt-4 text-base text-gray-500">
           Zabezpečujeme organizovanie osláv, stretávok, rodinné posedenia…

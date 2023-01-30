@@ -34,7 +34,7 @@ const FrontScreen = (props: FrontScreenProps) => {
       <div className="FrontScreen relative flex flex-col justify-center items-center grow w-full ">
         <div className="absolute left-1/7 sm:left-0" ref={homeRef}>
           <Reservations />
-          <div className="BUTTON fixed right-0 pr-4 ">
+          <div className="BUTTON fixed bottom-5 right-0 pr-2 lg:pr-4 ">
             <button
               onClick={handleClick}
               type="button"

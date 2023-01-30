@@ -6,7 +6,7 @@ const AboutPage = (props: AboutPageProps) => {
   return (
     <section className="h-full flex flex-col  p-10 ">
       <div className="pb-6">
-        <span className="text-gray-800 lg:text-4xl text-xl font-roboto uppercase font-semibold">
+        <span className="text-gray-800 lg:text-4xl text-2xl font-roboto uppercase font-semibold">
           O chate pod Ostrym vrchom
         </span>
       </div>

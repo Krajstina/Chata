@@ -4,7 +4,7 @@ export interface Reservation {
     phone?: string,
     name: string,
     lastName: string,
-    guests:number,
+    guests:number|null,
     dateFrom: Date,
     dateTo: Date,
     roomId: number | null,

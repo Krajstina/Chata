@@ -1,6 +1,6 @@
 import moment from "moment";
 import {Reservation} from "../interfaces/Reservation";
-import {roomsList} from "../Components/Rooms";
+import {roomsList} from "../Pages/roomsPage/Rooms";
 
 export const reservationDays = (dateFrom, dateTo) => {
   const diff = moment(dateTo).diff(moment(dateFrom));
