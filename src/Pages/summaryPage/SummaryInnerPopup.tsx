@@ -21,8 +21,8 @@ const SummaryInnerPopup = (props: SummaryInnerPopupProps) => {
   ) as ReservationContextType;
 
   return (
-    <div className="min-h-[100px]">
-      <aside className="SummaryInnerPopup text-md  font-bold font-roboto flex flex-col space-y-4">
+    <div className="min-h-[100px] ">
+      <aside className="SummaryInnerPopup  text-center text-md  font-bold font-roboto flex flex-col space-y-4">
         <h1 className="text-2xl mb-3 ">Ďakujeme za vašu rezerváciu!</h1>
         <p className="mb-3">Rezerváciu Vám posleme na emailovú adresu</p>
         <p className="text-sm">Prehľad Vašej rezervácie:</p>
@@ -62,7 +62,7 @@ const SummaryInnerPopup = (props: SummaryInnerPopupProps) => {
           </div>
         </dl>
       </aside>
-      <div className=" absolute  lg:min-w-[400px] rounded-lg lg:p-6 lg:left-12 p-2 bg-green-800 bottom-5 right-10 ">
+      <div className=" lg:min-w-[400px] rounded-lg lg:p-6 lg:left-12 p-2 bg-green-800 text-center ">
         <button
           type={"submit"}
           onClick={reservationContext.confirmReservationHandler}

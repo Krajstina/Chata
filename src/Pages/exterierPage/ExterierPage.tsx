@@ -31,7 +31,7 @@ const ExterierPage = (props: ExterierPageProps) => {
       </div>
       <div className="container relative flex flex-col px-5 mx-auto py-2  grow items-start justify-start ">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="grid lg:grid-rows-2  grid-rows-3 lg:grid-cols-4 h-full w-full lg:pt-24">
+          <div className="grid lg:grid-rows-2 lg:grid-cols-4 md:grid-rows-4 grid-rows-3  h-full w-full lg:pt-24">
             {imagesList.map((galleryImage, index) => {
               return (
                 <GalleryImageHolder

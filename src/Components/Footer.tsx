@@ -4,7 +4,7 @@ interface FooterProps {}
 
 const Footer = (props: FooterProps) => {
   return (
-    <div className="Footer w-full min-h-[40vh]  flex flex-col p-8 bg-green-100/50 border-t-2 ">
+    <div className="Footer w-full lg:min-h-[40vh]  flex flex-col p-8 bg-green-100/50 border-t-2 ">
       <div
         className="w-full flex justify-center items-center
 "
@@ -12,11 +12,11 @@ const Footer = (props: FooterProps) => {
         <img src="/assets/images/logoChataBlack.png" className="lg:h-full h-16" />
       </div>
       <div className="flex flex-col w-full h-full justify-center ">
-        <span className=" lg:text-lg font-light ">
+        <span className=" lg:text-lg text-center font-light text-[20px] ">
           Chata pod Ostrým vrchom <br />
           Soblahov 921{" "}
         </span>
-        <span className="lg:text-lg text-md font-normal mt-6 pb-4">
+        <span className="lg:text-lg text-[18px] text-center font-normal mt-6 pb-4">
           Rezervácie na čísle:
           <br />
           0917 564 633

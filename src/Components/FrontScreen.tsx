@@ -32,13 +32,13 @@ const FrontScreen = (props: FrontScreenProps) => {
     return (
         <div className="h-full w-full bg-transparent flex flex-col">
             <div className="FrontScreen relative flex flex-col justify-center items-center grow w-full ">
-                <div className="absolute left-1/7 sm:left-0" ref={homeRef}>
+                <div className="absolute lg:left-1/7 lg:left-1 lg:top-20" ref={homeRef}>
                     <Reservations />
                     <div className="BUTTON fixed bottom-5 right-0 pr-2 lg:pr-4 ">
                         <button
                             onClick={handleClick}
                             type="button"
-                            className="lg:h-14 h-8 w-8 lg:w-14 p-2 bg-orange-400 rounded-full"
+                            className="lg:h-14 md:h-12 md:w-12 h-8 w-8 lg:w-14 p-2 bg-orange-400 rounded-full"
                         >
                             <ArrowUturnUpIcon className="text-white" />
                         </button>
@@ -61,7 +61,7 @@ const FrontScreen = (props: FrontScreenProps) => {
                             <Overlay />
                             <img
                                 src="/assets/images/Placeholder1.jpg"
-                                className="lg:w-full h-[800px] lg:h-full object-cover"
+                                className="lg:w-full lg:min-h-[800px] h-full lg:h-full object-cover"
                                 alt={""}
                             />
                         </SwiperSlide>{" "}

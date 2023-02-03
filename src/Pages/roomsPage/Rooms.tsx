@@ -87,10 +87,10 @@ const Rooms = (props: RoomsProps) => {
           )}
         >
           <div className="flex flex-col justify-center items-center w-full sm:h-full">
-            <h4 className="text-gray-800 lg:text-[70px] text-xl pt-4  font-bold font-roboto pb-20 text-center">
+            <h4 className="text-gray-800 lg:text-[70px] text-xl pt-4 md:mt-8  font-bold font-roboto pb-20 text-center">
               Vyberte si izbu:
             </h4>
-              <div className=" flex  flex-col lg:flex-row justify-between gap-16 ">
+              <div className=" flex  flex-col lg:flex-row justify-between  xs:gap-10 md:gap-8 lg:gap-16 ">
                 {roomsList.map((room, index) => {
                   return (
                     <RoomCard
@@ -110,7 +110,7 @@ const Rooms = (props: RoomsProps) => {
             "transform-gpu duration-700 ease-in-out absolute inset-0 "
           )}
         >
-          <h4 className="text-gray-800 lg:text-[70px] font-bold font-roboto pt-6 lg:pt-14">
+          <h4 className="text-gray-800 text-center lg:text-[70px] font-bold font-roboto pt-6 lg:pt-14">
             Detail izby:
           </h4>
           <RoomDetailCard room={selectedRoom ? selectedRoom : roomsList[0]} />

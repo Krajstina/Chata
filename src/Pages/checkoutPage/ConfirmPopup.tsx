@@ -12,7 +12,7 @@ const ConfirmPopup = (props: ConfirmPopupProps) => {
 
   const reservationState = useTypedSelector((state) => state.reservationState);
   return (
-    <div className="p-12 sm:min-h-[900px] sm:min-w-[500px] ">
+    <div className="p-12 min-h-[900px] md:min-h-[600px]  sm:min-w-[500px] ">
       {!reservationContext.isSubmitting&&reservationContext.resRoom && (
         <SummaryInnerPopup
           resState={reservationState}

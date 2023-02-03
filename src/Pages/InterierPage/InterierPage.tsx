@@ -29,7 +29,7 @@ const InterierPage = (props: InterierPageProps) => {
       </div>
       <div className="container relative flex flex-col px-5 mx-auto py-2 grow items-start justify-start ">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-2 h-full w-full lg:pt-24 ">
+          <div className="grid lg:grid-cols-4  lg:grid-rows-2 grid-rows-3 md:grid-rows-4 h-full w-full lg:pt-24 ">
             {imagesList2.map((galleryImage, index) => {
               return (
                 <GalleryImageHolder

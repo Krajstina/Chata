@@ -93,14 +93,14 @@ const Checkout = (props: CheckoutProps) => {
     return <div className={"absolute top-0"}>{props.message}</div>;
   };
   return (
-    <div className="Checkout w-full flex flex-row justify-center sm:p-24 p-4 bg-green-100/50">
+    <div className="Checkout flex flex-row justify-center lg:p-24 p-8 bg-green-100/50">
       <form
         onSubmit={handleSubmit(onSubmitHandler)}
         className={
-          "w-full flex flex-col sm:flex-row   sm:justify-center   gap-12 "
+          "lg:flex lg:gap-12  "
         }
       >
-        <div className=" backButton relative flex sm:items-start justify-end  mt-4 flex   ">
+        <div className=" backButton relative flex sm:items-start mb-4 flex   ">
           <div className="bg-white rounded-lg ">
             <button
               onClick={backHandler}
@@ -111,8 +111,8 @@ const Checkout = (props: CheckoutProps) => {
             </button>
           </div>
         </div>
-        <div className=" flex flex-col justify-between gap-10 ">
-          <section className="sm:min-w-[800px] sm:min-h-[500px] bg-orange-400 p-6 rounded-lg shadow-gray-600/50">
+        <div className="flex flex-col gap-12">
+          <section className="lg:min-h-[500px] lg:min-w-[800px] bg-orange-400 p-6 rounded-lg shadow-gray-600/50">
             <div className=" justify-between my-6 gap-4 grid sm:grid-cols-2 gap-y-4 sm:gap-x-16 text-black">
               <input type={"hidden"} {...register("roomId")} />
 
@@ -189,19 +189,20 @@ const Checkout = (props: CheckoutProps) => {
           </section>
           <Summary />
         </div>
-        <div className="flex flex-wrap">
-          {" "}
-          <div className="w-full flex flex-col items-center bg-orange-400 rounded p-2">
+        <div className="mt-14 lg:mt-0">
+          <div className="w-full flex flex-col items-center bg-orange-400 rounded p-2 text-center">
             <span className="text-white font-roboto font-bold text-2">
               Pre dokoncenie rezervacie prosim potvrdte precitanie pravidiel
               chaty
             </span>
             <ChevronDownIcon className="text-white h-6 w-6 my-2" />
           </div>
-          <div className=" lg:max-h-[815px]  flex flex-col items-stretch justify-between ">
-            <div className=" bg-white overflow-auto overscroll-auto max-h-[300px] sm:max-h-full ">
+          <div className="flex flex-col items-stretch justify-between ">
+            <div className=" bg-white overflow-auto overscroll-auto max-h-[400px] lg:min-h-[680px] ">
               <TermsOfUse />
-              <div>
+            </div>
+            <div className="flex  flex-col  mt-4 items-center justify-center grow sm:pb-0 pb-4">
+              <div className="text-center">
                 <label>
                   <input
                     onChange={() => setChecked(!checked)}
@@ -210,8 +211,7 @@ const Checkout = (props: CheckoutProps) => {
                   Precital som si
                 </label>
               </div>
-            </div>
-            <div className="flex items-center justify-center grow sm:pb-0 pb-4">
+
               <button
                 onClick={handleSubmit(onSubmitHandler)}
                 type="submit"

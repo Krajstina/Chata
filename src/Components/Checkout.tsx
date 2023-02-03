@@ -95,7 +95,7 @@ const Checkout = (props: CheckoutProps) => {
         </div>
       </div>
       <div className=" flex flex-col justify-between gap-10 ">
-        <section className="sm:min-w-[800px] sm:min-h-[500px] bg-orange-400 p-6 rounded-lg shadow-gray-600/50">
+        <section className="sm:min-w-[800px] sm:min-h-[500px]  bg-orange-400 p-6 rounded-lg shadow-gray-600/50">
           <form
             onSubmit={handleSubmit(onSubmitHandler)}
             className=" justify-between gap-4 grid sm:grid-cols-2 gap-y-4 sm:gap-x-16"

@@ -22,7 +22,7 @@ const SummaryInnerPopup = (props: SummaryInnerPopupProps) => {
 
   return (
     <div className="min-h-[100px]">
-      <aside className="SummaryInnerPopup text-md  font-bold font-roboto flex flex-col space-y-4">
+      <aside className="SummaryInnerPopup text-center text-md  font-bold font-roboto flex flex-col space-y-4">
         <h1 className="text-2xl mb-3 ">Ďakujeme za vašu rezerváciu!</h1>
         <p className="mb-3">Rezerváciu Vám posleme na emailovú adresu</p>
         <p className="text-sm">Prehľad Vašej rezervácie:</p>

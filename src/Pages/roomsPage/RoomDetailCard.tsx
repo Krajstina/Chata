@@ -9,7 +9,7 @@ interface RoomDetailCardProps {
 
 const RoomDetailCard = (props: RoomDetailCardProps) => {
   return (
-    <div className="lg:p-16 p-12 flex flex-col overflow-hidden">
+    <div className="lg:p-16 xs:p-8 flex flex-col overflow-hidden">
       <div className="RoomDetailCard flex lg:flex-row rounded-lg flex-col">
         <div className="lg:w-1/2  rounded-lg overflow-hidden">
           <Swiper
@@ -29,7 +29,7 @@ const RoomDetailCard = (props: RoomDetailCardProps) => {
                 <SwiperSlide className="" key={index}>
                   <img
                     src={image}
-                    className="object-cover  h-[200px] lg:h-[700px]"
+                    className="object-cover  h-[200px] md:min-h-[500px] lg:min-h-[700px]"
                     alt={""}
                   />
                 </SwiperSlide>
@@ -39,7 +39,7 @@ const RoomDetailCard = (props: RoomDetailCardProps) => {
         </div>
 
         <div className=" aaaa flex flex col justify-center items-start lg:pt-10 bg-orange-400 lg:w-1/2 lg:min-h-[700px] max-h-[450px] rounded-lg p-2 ">
-          <div className="text-white text-[20px] lg:text-[50px] font-roboto font-bold ">
+          <div className=" text-center text-white text-[20px] lg:text-[50px] font-roboto font-bold ">
             {props.room.label}
             <div className="lg:text-xl text-[10px] p-4 lg:p-20 text-left">
               {props.room.detail}

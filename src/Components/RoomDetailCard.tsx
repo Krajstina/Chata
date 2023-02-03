@@ -39,7 +39,7 @@ const RoomDetailCard = (props: RoomDetailCardProps) => {
         </div>
 
         <div className=" aaaa flex flex col justify-center items-start lg:pt-10 bg-orange-400 lg:w-1/2 lg:min-h-[700px] max-h-[450px] rounded-lg p-2 ">
-          <div className="text-white text-[20px] lg:text-[50px] font-roboto font-bold ">
+          <div className="text-white text-[20px] lg:text-[50px] font-roboto font-bold text-center ">
             {props.room.label}
             <div className="lg:text-xl text-[10px] p-4 lg:p-20 text-left">
               {props.room.detail}

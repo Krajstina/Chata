@@ -90,7 +90,7 @@ const Rooms = (props: RoomsProps) => {
             <h4 className="text-gray-800 lg:text-[70px] text-xl pt-4  font-bold font-roboto pb-20 text-center">
               Vyberte si izbu:
             </h4>
-              <div className=" flex  flex-col lg:flex-row justify-between gap-16 ">
+              <div className=" flex  flex-col lg:flex-row justify-between  ">
                 {roomsList.map((room, index) => {
                   return (
                     <RoomCard
